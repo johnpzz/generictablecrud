@@ -1,0 +1,24 @@
+plugins {
+	id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+
+	compile group: 'org.hibernate', name: 'hibernate-gradle-plugin', version: '5.4.14.Final'
+	compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.6'
+	compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.4.0-b180830.0359'
+	compile group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: '7.2.2.jre11'
+
+}
+
+test {
+	//useJUnitPlatform()
+}

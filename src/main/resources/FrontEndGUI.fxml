@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="321.0" prefWidth="258.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="validation.Controller">
+    <children>
+        <TextField fx:id="resultTextField" layoutX="115.0" layoutY="171.0" prefHeight="25.0" prefWidth="111.0" promptText="100 - 1000" />
+        <Button fx:id="multiplyButton" layoutX="101.0" layoutY="276.0" mnemonicParsing="false" text="Multiply " />
+        <Label layoutX="65.0" layoutY="175.0" text="Result: " />
+        <Label layoutX="30.0" layoutY="130.0" prefHeight="17.0" prefWidth="71.0" text="2nd Number:" textAlignment="JUSTIFY" />
+        <TextField fx:id="secTextField" layoutX="113.0" layoutY="126.0" prefHeight="25.0" prefWidth="111.0" promptText="0 - 100" />
+        <Label layoutX="30.0" layoutY="89.0" prefHeight="17.0" prefWidth="71.0" text="1st Number:" textAlignment="JUSTIFY" />
+        <TextField fx:id="firstTextField" layoutX="115.0" layoutY="85.0" prefHeight="25.0" prefWidth="111.0" promptText="0 - 100" />
+        <Label layoutX="94.0" layoutY="25.0" prefHeight="17.0" prefWidth="71.0" text="Calculator" textAlignment="JUSTIFY">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="responseMessage" layoutX="18.0" layoutY="208.0" prefHeight="64.0" prefWidth="223.0" />
+
+    </children>
+</AnchorPane>

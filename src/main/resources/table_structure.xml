@@ -1,0 +1,23 @@
+<Tables>
+  <Table schema="dbo" name="books" objid="853578079">
+    <Column name="id" objid="1" IsPrimaryKey="1" />
+    <Column name="title" objid="2" IsPrimaryKey="0" />
+    <Column name="author" objid="3" IsPrimaryKey="0" />
+    <Column name="published_date" objid="4" IsPrimaryKey="0" />
+    <Column name="isbn" objid="5" IsPrimaryKey="0" />
+  </Table>
+  <Table schema="dbo" name="books_reviews" objid="901578250">
+    <Column name="id" objid="1" IsPrimaryKey="1" />
+    <Column name="book_id" objid="2" IsPrimaryKey="0" ColumnReferencesTableId="853578079" ColumnReferencesTableColumnId="1" />
+    <Column name="user_id" objid="3" IsPrimaryKey="0" ColumnReferencesTableId="981578535" ColumnReferencesTableColumnId="1" />
+    <Column name="review_content" objid="4" IsPrimaryKey="0" />
+    <Column name="rating" objid="5" IsPrimaryKey="0" />
+    <Column name="published_date" objid="6" IsPrimaryKey="0" />
+  </Table>
+  <Table schema="dbo" name="users" objid="981578535">
+    <Column name="id" objid="1" IsPrimaryKey="1" />
+    <Column name="username" objid="2" IsPrimaryKey="0" />
+    <Column name="enabled" objid="3" IsPrimaryKey="0" />
+    <Column name="last_login" objid="4" IsPrimaryKey="0" />
+  </Table>
+</Tables>
